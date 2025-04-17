@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bağarası</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #1f2937;
+      color: #f9fafb;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.8;
+    }
+
+    header, footer {
+      background-color: #111827;
+      border-radius: 1rem;
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    section {
+      background-color: #2d3748;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      opacity: 0;
+      transform: translateY(50px);
+    }
+
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+
+    u {
+      text-decoration: underline;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px;
+    }
+
+    a {
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #93c5fd;
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- ORTALANMIŞ HEADER -->
+  <header class="shadow-lg flex items-center justify-center text-center h-48 rounded-2xl my-4 mx-4">
+    <div>
+      <h1 class="text-4xl font-bold text-white">🌃 Bağarası</h1>
+      <p class="text-base mt-2 text-gray-300">✨ Neden Bağarası'na taşınmalısınız? ✨</p>
+    </div>
+  </header>
+
+  <main class="container mx-auto px-4 py-10 space-y-10">
+    <section class="reveal">
+      <h2 class="text-3xl font-semibold border-b border-gray-500 pb-3 mb-6">📜 Tarihçe ve İdari Yapı</h2>
+      <p><u>Bağarası, 1933 yılında köy statüsü kazanmış, 1989 yılında ise belediye olmuştur.</u> Ancak daha sonra Foça Belediyesi ile birleştirilerek mahalle statüsüne geçmiştir.</p>
+      <p class="mt-4">Bağarası'nın ilk belediye başkanı Ercan Yüksektepe'dir. 1990 yılında imece usulüyle inşa edilen belediye binası, 20 yıl belediye binası olarak kullanılmış, ardından 7 yıl öğrenci yurdu olarak hizmet vermiştir. 30 Ekim 2020'deki İzmir depreminde ağır hasar aldığı gerekçesiyle yıkılmıştır.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="text-3xl font-semibold border-b border-gray-500 pb-3 mb-6">🏗️ Altyapı ve Yatırımlar</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-100">Yeni Sanayi Sitesi</h3>
+          <p class="mt-2"><u>Foça Belediyesi ve İzmir Büyükşehir Belediyesi iş birliğiyle 2.870 m²'lik alanda 21 modern iş yerinden oluşan Bağarası Yeni Sanayi Sitesi'nin temeli 11 Ağustos 2023'te atıldı.</u> Esnafa modern ve sağlıklı çalışma koşulları sunmayı hedeflemektedir.</p>
+          <p class="mt-2"><u>İzmir Büyükşehir Belediye Başkanı Tunç Soyer, Foça'ya yapılan toplam yatırımın son 4 yılda 605 milyon TL olduğunu açıklamıştır.</u></p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold text-gray-100 mt-4">Yeni Pazar Yeri</h3>
+          <p class="mt-2"><u>Foça Belediyesi'nin İzmir Büyükşehir Belediyesi desteğiyle başlattığı 2.400 m²'lik pazar yeri</u>; satış yerleri, zabıta bürosu, çay ocağı ve tuvalet gibi alanlardan oluşacak. Ayrıca, pazar dışı günlerde araç otoparkı olarak kullanılabilecek.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="text-3xl font-semibold border-b border-gray-500 pb-3 mb-6">🏛️ Kültürel ve Sosyal Etkinlikler</h2>
+      <p><u>29 Ekim 2019 tarihinde Yeni Bağarası'nda Atatürk büstü açılmıştır.</u> Törene Foça Kaymakamı, Garnizon Komutanı, Belediye Başkanı ve mahalle sakinleri katılmıştır. Bu etkinlik, milli bayramların önemini yansıtan anlamlı bir girişimdir.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="text-3xl font-semibold border-b border-gray-500 pb-3 mb-6">📍 Coğrafi Konum</h2>
+      <p><u>Bağarası Mahallesi, Foça ilçe merkezine yaklaşık 10 kilometre uzaklıkta yer almaktadır.</u> Kırsal bir yerleşim yeri olan mahalle, ağırlıklı olarak tarım ve hayvancılıkla uğraşan bir nüfusa sahiptir.</p>
+    </section>
+
+    <section class="reveal">
+      <h2 class="text-3xl font-semibold border-b border-gray-500 pb-3 mb-6">🌐 Kaynaklar</h2>
+      <ul class="list-disc list-inside text-base text-gray-300 space-y-2">
+        <li><a href="https://www.sondakika.com/guncel/haber-bagarasi-eski-belediye-binasi-yikildi-foca-da-yeni-13766049" class="underline text-blue-300">Sondakika - Belediye Binası</a></li>
+        <li><a href="https://merkezizmir.com.tr/foca-bagarasi-yeni-sanayi-sitesi-projesinin-temel-atma-toreni-gerceklesti" class="underline text-blue-300">Merkez İzmir - Sanayi Sitesi</a></li>
+        <li><a href="https://www.sondakika.com/yerel/haber-foca-bagarasi-nda-yeni-pazar-yeri-yapimina-15764948" class="underline text-blue-300">Sondakika - Pazar Yeri</a></li>
+        <li><a href="https://www.timeturk.com/ajans/foca-yeni-bagarasi-nda-ataturk-bustu-acildi/haber-1266793" class="underline text-blue-300">TimeTurk - Atatürk Büstü</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="text-center py-6 text-base text-gray-400 shadow-lg">
+    <p>&copy; 2025 Bağarası Gang</p>
+  </footer>
+
+  <!-- Scroll Reveal -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+    const revealOnScroll = () => {
+      const windowHeight = window.innerHeight;
+      reveals.forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+        if (top < windowHeight - 100) {
+          el.classList.add("show");
+        }
+      });
+    };
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+</body>
+</html>
